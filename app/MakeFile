@@ -1,0 +1,6 @@
+.PHONY: dec enc
+
+enc:
+	cd app && find . | grep "./secrets.*.yaml$$" | xargs -I XXX helm secrets enc XXX 
+dec:
+	cd app && find . | grep "./secrets.*.yaml$$" | xargs -I XXX helm secrets dec XXX 

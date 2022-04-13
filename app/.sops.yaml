@@ -1,0 +1,5 @@
+creation_rules:
+  # CAG dev key
+  - kms: dgqfndq
+    # ADD PGP key
+    pgp:  oiwdoiqoi
